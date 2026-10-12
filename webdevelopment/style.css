@@ -1,9 +1,111 @@
 h1 {
-    color: navy;
+
     font-size: 36px;
 }
 
 p {
-    color: #444444;
+    color: #222222;
     font-size: 18px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 12px;
+}
+
+.hero {
+    position: relative;
+
+}
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    z-index: 1;
+    max-width: 450px;
+    color: #F5F1E8;
+}
+
+.hero-title {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 1;
+    width: 90%;
+
+
+    font-family: Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #F5F1E8;
+    max-width: 550px;
+}
+
+.hero-description {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    z-index: 2;
+    width: 90%;
+
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    color: #F5F1E8;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.itroduction {
+    padding: 20px;
+    background-color: #f5f1e8;
+    padding: 40%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.introduction h2 {
+    font-size: 26px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: #222222;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.introduction p {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #222222;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hero-button {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    z-index: 2;
+
+    padding: 12px 24px;
+    background-color: #FFCA8C;
+    color: #222222;
+    text-decoration: none;
+    border-radius: 8%;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#topics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    min-height: 600px;
+
 }
