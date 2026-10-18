@@ -1,0 +1,87 @@
+ /* Navigation syles: logo, Flexbox layout, dropdown, hover, and focus*/
+ :root {
+     --accent-color: #F5D6B8;
+ }
+
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+
+ }
+
+ nav>ul {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ nav li {
+
+     position: relative;
+ }
+
+ nav a {
+     display: block;
+     padding: 15px;
+     background-color: #F5F1E8;
+
+     color: #346B8A;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     border: 1px solid #346B8A;
+
+     font-size: 1rem;
+ }
+
+ header nav {
+     max-width: 100%;
+     min-width: 0;
+ }
+
+ nav li ul {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 150px;
+     z-index: 1;
+ }
+
+ nav li:hover>ul,
+ nav li:focus-within>ul {
+     display: block;
+ }
+
+
+
+ nav a:hover {
+     background-color: var(--accent-color);
+     color: #346B8A;
+     border: 1px solid #346B8A;
+ }
+
+ nav a:focus-visible {
+
+     background-color: var(--accent-color);
+     color: #346B8A;
+     border: 1px solid #346B8A;
+ }
+
+ header img {
+     width: 80px;
+     height: auto;
+
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     position: relative;
+     z-index: 10;
+
+
+ }

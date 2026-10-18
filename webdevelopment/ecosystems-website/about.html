@@ -3,7 +3,8 @@
 <html lang="en">
 <!--
     Name:Danelia Voigt
-    Date: September 10, 2026
+    Date: October 17, 2026
+    File: about.html
     Course: Introduction to Web Design and Development 
     Description: Reusable HTML Template
     -->
@@ -24,42 +25,67 @@
     <!--Links to an external CSS stylesheet for styling the webpage -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="content.html">Content</a>
-            <a href="resources.html">Resources</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+
+
+
         <!--Logo and Navigation will go here -->
+        <img src="images/ecosystem-logo.png" alt="Energy and Matter in Ecosystems logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Content</a>
+                    <ul>
+                        <li><a href="#">Food Chains and Webs</a></li>
+                        <li><a href="#">Energy Pyramids</a></li>
+                        <li><a href="#">Decomposers</a></li>
+                        <li><a href="#">Nutrient Cycles</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
 
     </header>
 
+    <main>
+        <section class="about">
+            <h1>About Me</h1>
+            <p>Hello! My name is Danelia Voigt, and I am a student in the Introduction to Web Design and Development
+                course.
+                I have a passion for learning about ecosystems and how energy flows through them. This website is a
+                project
+                that allows me to explore these topics while also developing my web design skills.</p>
+            <p>In this course, I have learned how to create web pages using HTML and CSS, and I am excited to continue
+                improving my skills. I hope you find the information on this website helpful and informative!</p>
 
-    <section class="about">
-        <h1>About Me</h1>
-        <p>Hello! My name is Danelia Voigt, and I am a student in the Introduction to Web Design and Development course.
-            I have a passion for learning about ecosystems and how energy flows through them. This website is a project
-            that allows me to explore these topics while also developing my web design skills.</p>
-        <p>In this course, I have learned how to create web pages using HTML and CSS, and I am excited to continue
-            improving my skills. I hope you find the information on this website helpful and informative!</p>
+            <a href="documents/Voigt%20Resume.pdf" class="resume-link">Download Resume</a>
 
-        <a href="documents/Voigt%20Resume.pdf" class="resume-link">Download Resume</a>
+            <h2> Topics Covered on This Website</h2>
+            <ul>
+                <li>Food Chains and Food Webs</li>
+                <li>Trophic Levels and 10% Rule </li>
+                <li>Scavengers, Detritivores, and Decomposers</li>
+                <li>Nutrient Cycles</li>
+            </ul>
 
-        <h2> Topics Covered on This Website</h2>
-        <ul>
-            <li>Food Chains and Food Webs</li>
-            <li>Trophic Levels and 10% Rule </li>
-            <li>Scavengers, Detritivores, and Decomposers</li>
-            <li>Nutrient Cycles</li>
-        </ul>
+        </section>
+    </main>
 
-    </section>
+    <!--Footer contains my name and current date-->
+    <footer>
+        <p>Danelia Voigt, October 17, 2026</p>
+    </footer>
+
 </body>
 
 </html>

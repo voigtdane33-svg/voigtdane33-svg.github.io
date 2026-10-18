@@ -39,7 +39,7 @@ p {
 
 
     font-family: Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     color: #F5F1E8;
     max-width: 550px;
@@ -53,7 +53,7 @@ p {
     width: 90%;
 
     font-family: Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #F5F1E8;
     max-width: 500px;
     line-height: 1.5;
@@ -87,7 +87,7 @@ p {
 
 .hero-button {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 15%;
     z-index: 2;
 
@@ -158,9 +158,29 @@ ul {
 
 }
 
-li {
+main li {
     color: #346b8a;
     font-family: Verdana, sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+/* Pseudo-element: style the introduction's first letter*/
+.resources .intro::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #346b8a
+}
+
+/* Indent all paragraphs except the introduction*/
+.resources p:not(.intro) {
+    text-indent: 2rem;
+}
+
+/* Resources content box*/
+.resources {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 24px;
+    border: 1px solid #346b8a;
 }
