@@ -59,7 +59,7 @@ p {
     line-height: 1.5;
 }
 
-.itroduction {
+.introduction {
     padding: 20px;
     background-color: #f5f1e8;
     padding: 40%;
@@ -183,4 +183,25 @@ main li {
     margin: 30px auto;
     padding: 24px;
     border: 1px solid #346b8a;
+}
+
+/*About page Teacher headshot */
+.teacher-photo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #346B8a;
+    margin: 20px 0;
+}
+
+/* about page- Ecosystem video */
+.ecosystem-video {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #346b8a;
+    margin: 20px 0;
+
 }
