@@ -3,7 +3,8 @@
 <html lang="en">
 <!--
     Name:Danelia Voigt
-    Date: September 10, 2026
+    Date: October 17, 2026
+    File: about.html
     Course: Introduction to Web Design and Development 
     Description: Reusable HTML Template
     -->
@@ -19,39 +20,80 @@
 
     <!--Sets the title of the webpage browser tab -->
 
-    <title>Energy and Matter in Ecosystems</title>
+    <title>About Me | Energy and Matter in Ecosystems</title>
 
     <!--Links to an external CSS stylesheet for styling the webpage -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-    <!--section that contains logo and navigation -->
     <header>
+
+
+
+
         <!--Logo and Navigation will go here -->
-        Energy and Matter in Ecosystems
-        Home | Content | Resources | About | Contact
+        <img src="images/ecosystem-logo.png" alt="Energy and Matter in Ecosystems logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Content</a>
+                    <ul>
+                        <li><a href="#">Food Chains and Webs</a></li>
+                        <li><a href="#">Energy Pyramids</a></li>
+                        <li><a href="#">Decomposers</a></li>
+                        <li><a href="#">Nutrient Cycles</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
     </header>
 
-    <!--section that contains: heading -->
-    <h1>About</h1>
-    <p>I am a science teacher at Belleville West High School in Southern Illinois, where I teach biology/ecology and
-        human biology. I have been teaching science for three years and currently teach the ecology concepts highlighted
-        on this website. I design much of my own instructional material and focus on making science accessible,
-        understandable, and connected to students’ everyday lives. My interest in instructional design and education
-        technology has influenced how I create and present content for students with different learning needs.
-    </p>
+    <main>
+        <section class="about">
+            <h1>About Me</h1>
+            <p>Hello! My name is Danelia Voigt, and I am a student in the Introduction to Web Design and Development
+                course.
+                I have a passion for learning about ecosystems and how energy flows through them. This website is a
+                project
+                that allows me to explore these topics while also developing my web design skills.</p>
+            <p>In this course, I have learned how to create web pages using HTML and CSS, and I am excited to continue
+                improving my skills. I hope you find the information on this website helpful and informative!</p>
 
-    <h3></h3> Education and Background</h3>
-    <p> I earned a bachelor’s degree in social science from Troy University and a master's degree in secondary education
-        from Mississippi State University. I am currently pursuing an Educational Specialist (EdS) in Learning
-        Technologies and Design with the University of Missouri to continue improving my instructional design skills and
-        the way I use technology to support learning.</p>
+            <a href="documents/Voigt%20Resume.pdf" class="resume-link">Download Resume</a>
 
-    <!--Footer contains my name and current date  -->
+            <h2> Topics Covered on This Website</h2>
+            <ul>
+                <li>Food Chains and Food Webs</li>
+                <li>Trophic Levels and 10% Rule </li>
+                <li>Scavengers, Detritivores, and Decomposers</li>
+                <li>Nutrient Cycles</li>
+            </ul>
+
+        </section>
+        <section class="about-media">
+            <h2>Meet Your Science Teacher</h2>
+            <img src="images/teacher-headshot.jpeg" alt="Portrait of Mrs. Voigt, science teacher" class="teacher-photo">
+            <h2>Explore Energy and Matter in Ecosystems</h2>
+            <p>Watch this short introduction to our website.</p>
+            <video class="ecosystem-video" controls>
+                <source src="videos/ecosystems-video.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </section>
+    </main>
+
+    <!--Footer contains my name and current date-->
     <footer>
-        <p>Danelia Voigt, September 20, 2026</p>
+        <p>Danelia Voigt, October 17, 2026</p>
     </footer>
 
 </body>
