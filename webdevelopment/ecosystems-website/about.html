@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="nav.css">
 </head>
 
-<body>
+<body class="about-page">
     <header>
 
 
@@ -59,29 +59,47 @@
 
     <main>
         <section class="about">
-            <h1>About Me</h1>
-            <p>Hello! My name is Danelia Voigt, and I am a student in the Introduction to Web Design and Development
-                course.
-                I have a passion for learning about ecosystems and how energy flows through them. This website is a
-                project
-                that allows me to explore these topics while also developing my web design skills.</p>
-            <p>In this course, I have learned how to create web pages using HTML and CSS, and I am excited to continue
-                improving my skills. I hope you find the information on this website helpful and informative!</p>
+            <h1>Danelia Voigt</h1>
+            <div class="about-intro">
+                <img src="images/teacher-headshot.jpeg" alt="Portrait of Mrs. Voigt, science teacher"
+                    class="teacher-photo">
+                <div class="about-text">
 
-            <a href="documents/Voigt%20Resume.pdf" class="resume-link">Download Resume</a>
 
-            <h2> Topics Covered on This Website</h2>
-            <ul>
-                <li>Food Chains and Food Webs</li>
-                <li>Trophic Levels and 10% Rule </li>
-                <li>Scavengers, Detritivores, and Decomposers</li>
-                <li>Nutrient Cycles</li>
+                    <p>Hello! My name is Danelia Voigt and I am a science teacher at Belleville West High School in
+                        Southern
+                        Illinois, where I teach Biology/Ecology and Human Biology. I have been teaching science for
+                        three
+                        years and currently teach the ecology concepts highlighted on this website.</p>
+
+                    <p>I design much of my own instructional material, focusing on making science accessible,
+                        understandable, and connected to students' everyday lives. My interest in instructional design
+                        and
+                        educational technology influences how I develop and present content to support students with
+                        different learning needs.</p>
+
+                    <a href=" documents/Voigt%20Resume.pdf" class="resume-link">Download Resume</a>
+                </div> <!--Closes about-text-->
+            </div> <!--Closes about-intro-->
+
+            <h2>Education &amp; Background</h2>
+            <ul class="education-list">
+                <li>University of Missouri - Educational Specialist (Ed.S.)
+                    in Learning technologies and Design (in progress)
+                </li>
+                <li>Mississippi State University - Master's Degree
+                    in Secondary Education
+                </li>
+                <li>Troy University - bachelor's Degree
+                    in Social Science
+                </li>
+                <li>United States Air Force Veteran</li>
             </ul>
 
         </section>
         <section class="about-media">
-            <h2>Meet Your Science Teacher</h2>
-            <img src="images/teacher-headshot.jpeg" alt="Portrait of Mrs. Voigt, science teacher" class="teacher-photo">
+
+
             <h2>Explore Energy and Matter in Ecosystems</h2>
             <p>Watch this short introduction to our website.</p>
             <video class="ecosystem-video" controls>
@@ -91,9 +109,12 @@
         </section>
     </main>
 
-    <!--Footer contains my name and current date-->
+    <!--Footer contains my name,current date, and contact information-->
     <footer>
-        <p>Danelia Voigt, October 17, 2026</p>
+        <p class="footer-date"> Danelia Voigt, October 17, 2026</p>
+        <p class="footer-contact">
+            Contact: <a href="mailto:dsvoigt@missouri.edu">dsvoigt@missouri.edu</a>
+        </p>
     </footer>
 
 </body>

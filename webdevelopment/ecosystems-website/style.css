@@ -205,3 +205,63 @@ main li {
     margin: 20px 0;
 
 }
+
+/* About page layout. Flexbox to place the headshot on the left and intro text on the right. The gap adds space between the two elements. The text width is restricted for easier reading. */
+.about-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px
+}
+
+.about-text {
+    max-width: 750px;
+}
+
+/* About page education list- Styles the education and background bullet points. Adds space between each item */
+.education-list {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 30px;
+}
+
+.education-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Print styles for the About page */
+@media print {
+    @page {
+        margin: 1in;
+    }
+
+    .about-page,
+    .about-page h1,
+    .about-page h2,
+    .about-page p,
+    .about-page ul,
+    .about-page li,
+    .about-page a,
+    .about-page footer {
+        color: black;
+        font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    /* Hide logo and navigation when pringing */
+    .about-page header {
+        display: none;
+    }
+
+    /* Hide photo, resume, and video when printing */
+    .about-page .teacher-photo,
+    .about-page .resume-link,
+    .about-page .about-media {
+        display: none;
+    }
+
+    /* Hide footer date when printing */
+    .about-page .footer-date {
+        display: none;
+    }
+}
