@@ -3,7 +3,7 @@ footer img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 /* Adds a background image to the footer Photo by ran liwen on Unsplash */
@@ -13,10 +13,13 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 10px;
+    padding-left: 20px;
 }
 
-.photo-credi {
+.photo-credit {
     font-size: 12px;
-    text-align: center;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
