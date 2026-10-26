@@ -1,0 +1,17 @@
+/* Styles the icons inside the footer */
+footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Adds a background image to the footer Photo by ran liwen on Unsplash */
+footer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)), url("images/footer-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
