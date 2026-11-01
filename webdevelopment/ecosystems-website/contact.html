@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--
+    Name:Danelia Voigt
+    Date: October 31, 2026
+    Course: Introduction to Web Design and Development 
+    Description: Contact page for the Energy and Matter in Ecosystems website. Includes the contact form.
+    -->
+
+<head>
+    <link rel="stylesheet" href="nav.css">
+    <!--Sets the character encoding -->
+
+    <meta charset="UTF-8">
+
+    <!--Sets the viewport to ensure proper scaling on different devices -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Sets the title of the webpage browser tab -->
+
+    <title>Contact Me | Energy and Matter in Ecosystems</title>
+    <link rel="icon" type="image/png" href="images/ecosystem-logo.png?v=4">
+    <!--Links to an external CSS stylesheet for styling the webpage -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--section that contains logo and navigation -->
+    <header>
+        <!--Logo and Navigation will go here -->
+        <img src="images/ecosystem-logo.png" alt="Energy and Matter in Ecosystems logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Content</a>
+                    <ul>
+                        <li><a href="#">Food Chains and Webs</a></li>
+                        <li><a href="#">Energy Pyramids</a></li>
+                        <li><a href="#">Decomposers</a></li>
+                        <li><a href="#">Nutrient Cycles</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content for the Contact page -->
+    <main>
+        <!-- Contact Me banner -->
+        <section class="contact-banner">
+            <h1>Contact Me</h1>
+        </section>
+
+        <!--Contact Form -->
+        <form class="contact-form">
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="" disabled selected>Select your title</option>
+
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr">Dr.</option>
+            </select>
+
+            <!--Name field-->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <!--Email address field-->
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <!-- Subject Selection meue -->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected> Select a subject</option>
+                <option value="general">General Question</option>
+                <option value="feedback">Website Feedback</option>
+                <option value="ecosystems">Question About Ecosystems</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- Message field-->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+            <!-- Contact form submit button-->
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+
+    <!--Footer contains my name and current date -->
+    <footer>
+        <p>
+            <img src="images/phone.png" alt="Phone icon">
+            Phone: (555) 950-4440
+        </p>
+        <p>
+            <img src="images/email.png" alt="Email icon">
+            Email: dsvoigt@missouri.edu
+        </p>
+        <p class="photo-credit">
+            Background photo by ran liwen on Unsplash
+        </p>
+    </footer>
+
+</body>
+
+</html>
