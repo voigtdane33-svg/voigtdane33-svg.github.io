@@ -85,3 +85,22 @@
 
 
  }
+
+ /* Mobile navigation layout */
+ @media (max-width: 600px) {
+     header {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 15px;
+     }
+
+     nav>ul {
+         justify-content: center;
+         gap: 8px;
+     }
+
+     nav a {
+         padding: 10px;
+         font-size: 0.9rem;
+     }
+ }

@@ -80,7 +80,7 @@ p {
 .introduction {
     padding: 20px;
     background-color: #f5f1e8;
-    padding: 40%;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
@@ -171,6 +171,20 @@ header {
     font-weight: bold;
 }
 
+/* change the resume button color when hovered */
+.resume-link:hover {
+    background-color: #346b8a;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.resume-link:focus-visible {
+    background-color: #346b8a;
+    color: #FFFFFF;
+    outline: 3px solid #FFCA8C;
+    outline-offset: 3px;
+}
+
 ul {
     list-style-type: square;
 
@@ -224,11 +238,28 @@ main li {
 
 }
 
-/* About page layout. Flexbox to place the headshot on the left and intro text on the right. The gap adds space between the two elements. The text width is restricted for easier reading. */
+/* CSS Grid: Photo on the left, introduction on the right */
 .about-intro {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: start;
+    gap: 30px;
+}
+
+/* Main Grid: Organizes the about and video sections */
+.about-page main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1px;
+}
+
+/* About page: Add spacing inside the content sections */
+.about-page .about,
+.about-page .about-media {
+    padding: 20px;
+    background-color: #F5F1E8;
+    border: 1px solid #346B8A;
+    border-radius: 10px;
 }
 
 .about-text {
@@ -374,4 +405,29 @@ footer {
 /* Contact form submit button hover effect */
 .contact-form button:hover {
     background-color: #254e65;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: #346b8a;
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile layout: stack phot above introduction */
+@media (max-width: 600px) {
+    .about-page .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page .teacher-photo {
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+/* About page background */
+.about-page {
+    background-color: #F5F1E8;
 }
