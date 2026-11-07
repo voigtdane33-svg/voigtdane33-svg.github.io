@@ -134,27 +134,10 @@ p {
 
 }
 
-.main-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    font-weight: bold;
 
 
 
-}
 
-.main-nav a {
-    color: #346b8a;
-    text-decoration: none;
-
-}
-
-header {
-    background-color: #f5f1e8;
-    padding: 20px;
-
-}
 
 .resume-link {
     display: inline-block;
@@ -229,16 +212,27 @@ main li {
 
 /* about page- Ecosystem video */
 .ecosystem-video {
-    width: 400px;
-    max-width: 100%;
+    display: block;
+    width: 100%;
+    max-width: 750px;
     height: auto;
     border-radius: 15px;
+    box-sizing: border-box;
     border: 3px solid #346b8a;
-    margin: 20px 0;
+    margin: 20px auto;
 
 }
 
 /* CSS Grid: Photo on the left, introduction on the right */
+/*About page: two colums for bio and education */
+.about-page .about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 30px;
+    align-items: start;
+
+}
+
 .about-intro {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -414,18 +408,28 @@ footer {
     }
 }
 
-/* Mobile layout: stack phot above introduction */
+/* Mobile layout: stack phot above introduction/stack about page content vertically  */
 @media (max-width: 600px) {
-    .about-page .about-intro {
+
+    /* Outer grid: stack bio group above education */
+    .about-page .about-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-page .teacher-photo {
-        max-width: 100%;
-        height: auto;
-
+    /* Inner grid: Stack photograph above biography */
+    .about-page .about-intro {
+        grid-template-columns: 1fr;
     }
 }
+
+/* stack photo above biograpy */
+
+.about-page .teacher-photo {
+    max-width: 100%;
+    height: auto;
+
+}
+
 
 /* About page background */
 .about-page {

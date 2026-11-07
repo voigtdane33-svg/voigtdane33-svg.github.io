@@ -82,7 +82,26 @@
      flex-wrap: wrap;
      position: relative;
      z-index: 10;
+     background-color: #f5f1e8;
+     padding: 20px;
 
+
+ }
+
+
+ .main-nav {
+     display: flex;
+     justify-content: flex-end;
+     gap: 20px;
+     font-weight: bold;
+
+
+
+ }
+
+ .main-nav a {
+     color: #346b8a;
+     text-decoration: none;
 
  }
 
