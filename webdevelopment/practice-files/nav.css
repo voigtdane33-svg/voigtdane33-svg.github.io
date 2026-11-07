@@ -82,3 +82,32 @@
 
 
  }
+
+ /* Hide hamburger icon on larger screens */
+ .hamburger {
+     display: none;
+ }
+
+ /*Mobile navigation */
+ @media (max-width: 600px) {
+
+     /* Hide full navigation menu */
+     header nav {
+         display: none;
+     }
+
+     /* Show hamburger icon */
+     .hamburger {
+         display: block;
+         font-size: 2rem;
+         color: #346b8a;
+
+     }
+
+     /* Keep dropdown menus hidden */
+     nav li ul,
+     nav li:hover>ul,
+     nav li:focus-within>ul {
+         display: none;
+     }
+ }
