@@ -105,21 +105,60 @@
 
  }
 
+ /* Hide hamburger icon on desktop */
+ .hamburger {
+     display: none;
+
+ }
+
+ /* Hide the checkbox but keep it functional */
+ .menu-toggle {
+     position: absolute;
+     opacity: 0;
+     width: 1px;
+     height: 1px;
+ }
+
  /* Mobile navigation layout */
  @media (max-width: 600px) {
-     header {
-         flex-direction: column;
-         align-items: flex-start;
-         gap: 15px;
-     }
 
-     nav>ul {
-         justify-content: center;
-         gap: 8px;
-     }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
 
-     nav a {
-         padding: 10px;
-         font-size: 0.9rem;
-     }
- }
+    /* Hide navigation until hamburger is clicked */
+    header > nav {
+        display: none;
+    }
+
+    /* Show navigation when checkbox is checked */
+    header > .menu-toggle:checked ~ nav {
+        display: block;
+        width: 100%;
+    }
+
+    /* Stack main navigation links vertically */
+    header > nav > ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    /* Adjust navigation links for mobile */
+    nav a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: #346B8A;
+        margin-left: auto;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--
+    Name:Danelia Voigt
+    Date: November 14, 2026
+    Course: Introduction to Web Design and Development 
+    Description: responsive ecosystem content page
+    
+    -->
+
+<head>
+    <link rel="stylesheet" href="nav.css">
+    <!--Sets the character encoding -->
+
+    <meta charset="UTF-8">
+
+    <!--Sets the viewport to ensure proper scaling on different devices -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Sets the title of the webpage browser tab -->
+
+    <title>Energy and Matter in Ecosystems</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+    <!--Links to an external CSS stylesheet for styling the webpage -->
+
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body class="project-page">
+
+    <!--section that contains logo and navigation -->
+    <header>
+        <!--Logo and Navigation will go here -->
+
+        <img src="images/ecosystem-logo.png" alt="Energy and Matter in Ecosystems logo">
+        <!-- Hamburger icon for mobile screen/ mobile menu -->
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+        <label for="menu-toggle" class="hamburger">
+
+            &#9776;
+        </label>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="project.html">Content</a>
+                    <ul>
+                        <li><a href="project.html#food-webs">Food Chains and Webs</a></li>
+                        <li><a href="project.html#energy-pyramids">Energy Pyramids</a></li>
+                        <li><a href="project.html#decomposers">Decomposers</a></li>
+                        <li><a href="project.html#nutrient-cycles">Nutrient Cycles</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main content: four ecosytem learning topics  -->
+    <main>
+        <h1>Energy and Matter in Ecosystems</h1>
+        <p>Explore how energy moves through ecosystems and how matter is recycled.</p>
+
+        <section id="food-webs" class="topic-section">
+            <!-- Image: left column -->
+            <div class="topic-image">
+                <figure>
+                    <img src="images/food-web.png"
+                        alt="Food web showing relationships among plants, rabbits, partridges, and a fox">
+
+                    <figcaption>
+                        Food web illustration by
+                        <a
+                            href="https://commons.wikimedia.org/wiki/File:Example_trophic_web_fox_partridge_rabbit_and_plants.png">
+                            Wiki brain
+                        </a>,
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                            CC BY-SA 4.0
+                        </a>,
+                        via Wikimedia Commons. No changes made.
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Text: right column -->
+            <div class="topic-text">
+                <h2>How Does Energy Move Through an Ecosystem?</h2>
+                <p>
+                    Every organism needs energy to survive. Most energy in an
+                    ecosystem begins with the Sun. Producers, such as plants
+                    and algae, capture sunlight to produce food. When an
+                    organism eats another organism, some of that stored
+                    energy is transferred to the consumer.
+                </p>
+                <p>
+                    A food chain shows one path that energy can take
+                    through an ecosystem.
+                </p>
+                <p>Sun → grass → rabbit → fox</p>
+                <p>
+                    The arrows show the direction that energy moves.
+                    The arrow points from the organism being eaten
+                    toward the organism receiving the energy.
+                </p>
+                <p>
+                    A food web shows many connected food chains in the
+                    same ecosystem. Most organisms eat more than one type
+                    of food and may also be eaten by several different
+                    organisms. Food webs give us a more realistic picture
+                    of how energy moves through an ecosystem.
+                </p>
+            </div>
+
+
+        </section>
+
+        <section id="energy-pyramids" class="topic-section">
+            <!-- Text: left column -->
+            <div class="topic-text">
+                <h2>Why Is Less Energy Available at Higher Trophic Levels?</h2>
+
+                <p>
+                    Organisms in a food chain or web can be grouped into trophic
+                    levels based on how they get their energy.
+                </p>
+
+                <ul>
+                    <li>Producers make their own food and form the first trophic level.</li>
+                    <li>Primary consumers eat producers.</li>
+                    <li>Secondary consumers eat primary consumers.</li>
+                    <li>Tertiary consumers eat secondary consumers.</li>
+                </ul>
+
+                <p>
+                    As energy moves from one trophic level to the next, only about
+                    10% of the energy is transferred to the next level. The remaining
+                    energy is used by organisms for life processes such as movement,
+                    growth, and maintaining body functions, and is also released as heat.
+                </p>
+
+                <p>
+                    Example: If producers contain 1,000 units of energy, primary
+                    consumers may receive about 100 units, and secondary consumers
+                    may receive about 10 units.
+                </p>
+
+                <p>
+                    This is the reason why higher trophic levels have less energy available.
+                </p>
+
+                <p><strong>Main Idea:</strong> Only about 10% of energy is transferred to the next trophic level.</p>
+            </div>
+
+            <!-- Image: right column -->
+            <div class="topic-image">
+                <figure>
+                    <img src="images/energy-pyramid.png"
+                        alt="Energy pyramid showing four trophic levels and the 10 percent energy transfer rule">
+
+                    <figcaption>
+                        Energy Pyramid by
+                        <a
+                            href="https://www.kuraplan.com/free-images/energy_pyramid--5779a1b5-775d-43d1-9257-16f422b051f4">
+                            Kuraplan
+                        </a>,
+                        licensed under
+                        <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+                            CC BY-NC 4.0
+                        </a>.
+                        No changes made.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="decomposers" class="topic-section">
+            <!-- Image: left column -->
+            <div class="topic-image">
+                <figure>
+                    <img src="images/decomposers-diagram.png"
+                        alt="Diagram showing scavengers, detritivores, and decomposers breaking down dead organisms and waste and returning nutrients to the environment">
+
+                    <figcaption>
+                        Scavengers, Detritivores, and Decomposers.
+                        AI-generated illustration created using
+                        OpenAI's ChatGPT, November 7, 2026.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Text: right column -->
+            <div class="topic-text">
+                <h2>What Happens to Dead Organisms and Waste?</h2>
+
+                <p>
+                    When organisms die or produce waste, that matter does not disappear.
+                    Different organisms help break it down and return nutrients to the ecosystem.
+                </p>
+
+                <ul>
+                    <li>Scavengers eat dead animals. Examples include vultures and hyenas.</li>
+                    <li>Detritivores eat small pieces of dead organisms and waste. Examples include earthworms and pill
+                        bugs.</li>
+                    <li>Decomposers, such as bacteria and fungi, break down dead matter and waste into simpler
+                        substances.</li>
+                </ul>
+
+                <p>
+                    Unlike scavengers and detritivores, bacteria and fungi do not eat in the
+                    same way animals do. They use external digestion and absorption. They
+                    release enzymes onto dead material, break it down outside their bodies,
+                    and then absorb the smaller nutrients.
+                </p>
+
+                <p>
+                    Decomposers are important because they return nutrients to the soil and
+                    water. Plants can take up those nutrients and use them again.
+                </p>
+
+                <p>
+                    Together, scavengers, detritivores, and decomposers help clean up dead
+                    material and keep matter moving through the ecosystem.
+                </p>
+
+                <p><strong>Main Idea:</strong> Dead matter does not disappear. It is broken down and recycled.</p>
+            </div>
+        </section>
+
+
+
+        <section id="nutrient-cycles" class="topic-section">
+            <!-- Text: left column -->
+            <div class="topic-text">
+                <h2>Why Does Matter Keep Getting Reused?</h2>
+
+                <p>
+                    Unlike energy, which flows through an ecosystem and is
+                    released as heat, matter is recycled. Important nutrients
+                    move and are recycled repeatedly between organisms and
+                    the air, water, and soil through nutrient cycles.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Carbon:</strong> Carbon moves through organisms,
+                        the atmosphere, water, and soil. Plants take in carbon
+                        dioxide during photosynthesis, and carbon moves through
+                        food webs when organisms eat.
+                    </li>
+
+                    <li>
+                        <strong>Nitrogen:</strong> Nitrogen is needed to build
+                        proteins and DNA. Most organisms cannot use nitrogen gas
+                        directly from the atmosphere. Bacteria help change
+                        nitrogen into forms that plants can absorb from the soil.
+                    </li>
+
+                    <li>
+                        <strong>Phosphorus:</strong> Phosphorus is important for
+                        DNA, ATP, and bones and teeth. It mainly moves through
+                        rocks, soil, water, plants, and animals.
+                    </li>
+                </ul>
+
+                <p>
+                    When organisms die or produce waste, decomposers help
+                    return nutrients to the environment, where they can
+                    be used again.
+                </p>
+
+                <p>
+                    <strong>Main Idea:</strong> Energy flows through ecosystems,
+                    but matter cycles and is reused.
+                </p>
+            </div>
+
+            <!-- Image: right column -->
+            <div class="topic-image">
+                <figure>
+                    <img src="images/nutrient-cycles.png"
+                        alt="Three-part illustration showing carbon, nitrogen, and phosphorus moving between organisms and the environment">
+
+                    <figcaption>
+                        The Nutrient Cycle by
+                        <a href="https://louis.pressbooks.pub/environmentalscience/chapter/chapter-1/">
+                            Waneene C. Dorsey, Grambling State University
+                        </a>,
+                        licensed under
+                        <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+                            CC BY-NC 4.0
+                        </a>.
+                        No changes made.
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!--Footer contains my name and current date -->
+    <footer>
+        <p>
+            <img src="images/phone.png" alt="Phone icon">
+            Phone: (555) 950-4440
+        </p>
+        <p>
+            <img src="images/email.png" alt="Email icon">
+            Email: dsvoigt@missouri.edu
+        </p>
+        <p class="photo-credit">
+            Background photo by ran liwen on Unsplash
+        </p>
+    </footer>
+
+</body>
+
+</html>

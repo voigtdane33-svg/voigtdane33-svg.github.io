@@ -1,3 +1,9 @@
+/* Danelia Voigt
+    Date: November 14, 2026
+    Course: Introduction to Web Design and Development 
+    Description: Styles the ecosystem website, including responsive page layouts, css grid, flexbox, images, text, buttons, and mobile media */
+*/
+
 /* website body font */
 body {
     font-family: Arial, sans-serif;
@@ -78,9 +84,10 @@ p {
 }
 
 .introduction {
-    padding: 20px;
+    padding: 30px;
     background-color: #f5f1e8;
-
+    border-radius: 12px;
+    margin: 25px 0 35px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
@@ -132,6 +139,34 @@ p {
     gap: 20px;
     min-height: 600px;
 
+}
+
+/* Home Page: Style the four topic cards */
+#topics .topic-card {
+    background-color: #F5F1E8;
+    border: 1px solid #346B8A;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Style the Explore links as buttons */
+#topics .topic-card a {
+    display: inline-block;
+    background-color: #FFCA8C;
+    color: #222222;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change button appearance on hover or keyboard focus */
+#topics .topic-card a:hover,
+#topics .topic-card a:focus-visible {
+    background-color: #346B8A;
+    color: #FFFFFF;
 }
 
 
@@ -202,7 +237,7 @@ main li {
 
 /*About page Teacher headshot */
 .teacher-photo {
-    width: 250px;
+    width: 300px;
     max-width: 100%;
     height: auto;
     border-radius: 15px;
@@ -235,7 +270,7 @@ main li {
 
 .about-intro {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 300px minmax(0, 1fr);
     align-items: start;
     gap: 30px;
 }
@@ -434,4 +469,235 @@ footer {
 /* About page background */
 .about-page {
     background-color: #F5F1E8;
+}
+
+/* Content Page: Two-column layout for ecosystem topics */
+.project-page .topic-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 25px;
+    background-color: #F5F1E8;
+    border: 1px solid #346B8A;
+}
+
+/* Control image size within each content row */
+.project-page .topic-image img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Keep the image and its credit the same width */
+.project-page .topic-image figure {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* Style the image attribution */
+.project-page .topic-image figcaption {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Content Page: Mobile responsive layout */
+@media (max-width: 600px) {
+
+    /* Stack image and text vertically */
+    .project-page .topic-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    /* Display every topic image above its text */
+    .project-page .topic-image {
+        grid-row: 1;
+    }
+
+    .project-page .topic-text {
+        grid-row: 2;
+    }
+
+    /* Adjust headings for smaller screens */
+    .project-page .topic-text h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Home Page: Responsive mobile hero and introduction */
+@media (max-width: 600px) {
+
+    /* Arrange hero text vertically over the photograph */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        min-height: 400px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* Keep photograph behind the text */
+    .hero-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    /* Dark overlay improves text readability */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+
+    /* Prevent heading and description from overlapping */
+    .hero-title,
+    .hero-description {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        color: white;
+        z-index: 2;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Position button below the text */
+    .hero-button {
+        position: relative;
+        top: auto;
+        left: auto;
+        z-index: 2;
+    }
+
+    /* Stack introduction heading and paragraph */
+    .introduction {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Home Page: Responsive mobile hero and introduction */
+@media (max-width: 600px) {
+
+    /* Arrange hero text vertically over the photograph */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        min-height: 400px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* Keep photograph behind the text */
+    .hero-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    /* Dark overlay improves text readability */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+
+    /* Prevent heading and description from overlapping */
+    .hero-title,
+    .hero-description {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        color: white;
+        z-index: 2;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Position button below the text */
+    .hero-button {
+        position: relative;
+        top: auto;
+        left: auto;
+        z-index: 2;
+    }
+
+    /* Stack introduction heading and paragraph */
+    .introduction {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Home Page: Tablet topic layout */
+@media (min-width: 601px) and (max-width: 900px) {
+    #topics {
+        grid-template-columns: repeat(2, 1fr);
+        min-height: auto;
+    }
+}
+
+/* Home Page: Mobile topic layout */
+@media (max-width: 600px) {
+    #topics {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        min-height: auto;
+        padding: 15px;
+    }
 }
