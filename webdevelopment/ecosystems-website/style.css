@@ -242,7 +242,7 @@ main li {
     height: auto;
     border-radius: 15px;
     border: 3px solid #346B8a;
-    margin: 20px 0;
+    margin: 0;
 }
 
 /* about page- Ecosystem video */
@@ -308,6 +308,67 @@ main li {
     font-family: Arial, sans-serif;
 }
 
+/* STyling for Energy Transfer Table */
+.energy-transfer-table {
+    background-color: #F5F1E8;
+    border: 1px solid #346B8A;
+    border-radius: 12px;
+    margin: 0;
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+
+.energy-transfer-table h2 {
+    color: #346B8A;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+
+
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.energy-transfer-table table {
+    width: 100%;
+    border: 2px solid #346B8A;
+    border-collapse: collapse;
+
+}
+
+.energy-transfer-table caption {
+    padding: 12px;
+    font-weight: bold;
+    color: #346B8A;
+    font-family: Verdana, sans-serif;
+}
+
+.energy-transfer-table th,
+.energy-transfer-table td {
+    border: 1px solid #346B8A;
+    padding: 12px;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+}
+
+.energy-transfer-table thead {
+    background-color: #346B8A;
+    color: #F5F1E8;
+}
+
+/* Color the 1st and 3rd data rows */
+.energy-transfer-table tbody tr:nth-child(odd) {
+    background-color: #FFCA8C;
+}
+
+/* Color the 2nd and 4th data rows */
+.energy-transfer-table tbody tr:nth-child(even) {
+    background-color: #F5F1E8;
+}
+
 /* Print styles for the About page */
 @media print {
     @page {
@@ -368,6 +429,18 @@ footer {
     text-align: right;
     padding-top: 10px;
     padding-bottom: 0px;
+}
+
+/* Contact Page: Keep footer at bottom of viewport */
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contact-page main {
+    flex: 1;
 }
 
 /* Contact Page Banner Styling*/
@@ -436,6 +509,17 @@ footer {
     background-color: #254e65;
 }
 
+/* Contact Page: Keep footer at bottom of screen */
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page main {
+    flex: 1;
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         color: #346b8a;
@@ -472,6 +556,13 @@ footer {
 }
 
 /* Content Page: Two-column layout for ecosystem topics */
+
+.project-page main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .project-page .topic-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -480,9 +571,11 @@ footer {
     padding: 25px;
     background-color: #F5F1E8;
     border: 1px solid #346B8A;
+    border-radius: 12px;
 }
 
-/* Control image size within each content row */
+/* Consistent spacing between Content Page sections */
+
 .project-page .topic-image img {
     display: block;
     width: 100%;
@@ -699,5 +792,35 @@ footer {
         gap: 15px;
         min-height: auto;
         padding: 15px;
+    }
+}
+
+/* Responsive styling for Energy Transfer Table */
+@media (max-width: 600px) {
+    .energy-transfer-table {
+        padding: 10px;
+
+    }
+
+    .energy-transfer-table table {
+        min-width: 0;
+
+    }
+
+    .energy-transfer-table th,
+    .energy-transfer-table td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+
+    }
+
+    .energy-transfer-table h2 {
+        font-size: 1.4rem;
+
+    }
+
+    .energy-transfer-table caption {
+        font-size: 1rem;
+
     }
 }
